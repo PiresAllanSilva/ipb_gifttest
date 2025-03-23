@@ -63,7 +63,7 @@ if "page" not in st.session_state:
 
 # Form Page
 if st.session_state.page == "form":
-    st.title("Questionário - 100 Questões")
+    st.title("Questionário 'Qual é o seu dom?'- Adaptado por Berndt Wolter D.Min (133 Questões)")
 
     with st.form("questionnaire_form"):
         responses = {}

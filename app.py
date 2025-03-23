@@ -106,7 +106,8 @@ if st.session_state.page == "results":
         total_scores_df = pd.DataFrame(list(total_scores.items()), columns=["Dom", "Pontuação"]).set_index("Dom")
 
         st.bar_chart(total_scores_df)
-
+        st.write("Respostas anteriores:")
+        st.dataframe(df)
     st.button("Voltar ao Início", on_click=lambda: st.session_state.update(page="form"))
 
 

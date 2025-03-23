@@ -95,7 +95,7 @@ if st.session_state.page == "results":
 
     if not df.empty:
         # Generate graph data
-        dons_df = generate_graph_data(df)
+        dons_df = generate_graph_data(df[-1:])
 
         # Display results
         st.write("Pontuações por Dom:")

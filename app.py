@@ -63,11 +63,11 @@ if "page" not in st.session_state:
 
 # Form Page
 if st.session_state.page == "form":
-    st.title("Questionário 'Qual é o seu dom?'- Adaptado por Berndt Wolter D.Min (133 Questões)")
+    st.title("Questionário 'Qual é o seu dom?'- Adaptado da adaptação de Berndt Wolter D.Min por Márcio Barzoto (119 Questões)")
 
     with st.form("questionnaire_form"):
         responses = {}
-        for i in range(1, 134):
+        for i in range(1, 120):
             responses[f"Q{i}"] = st.radio(f"Questão {i}: {questions_list[i-1]}", answer_choices.keys(), index=0)
 
         submitted = st.form_submit_button("Enviar Respostas")
